@@ -1,6 +1,7 @@
 import pandas as pd
 from google.colab import files
 
+
 # Replace 'your_file.csv' with the actual path to your CSV file
 uploaded = files.upload()
 file_path = next(iter(uploaded)) # Get the name of the uploaded file
@@ -30,8 +31,6 @@ df = pd.concat([new_row, df], ignore_index=True)
 # Display the first few rows and the columns to verify
 print(df.head())
 print(df.columns)
-
-from google.colab import files
 
 # Get the filename from the user
 output_filename_base = input("Enter the desired filename for the downloaded file (without extension): ")
